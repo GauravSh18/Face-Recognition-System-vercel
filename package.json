@@ -1,0 +1,29 @@
+{
+  "name": "face-recognition-system",
+  "version": "1.0.0",
+  "description": "MERN stack face recognition system",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "keywords": ["face-recognition", "mern", "react", "node", "mongodb"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14",
+    "concurrently": "^6.3.0"
+  }
+}
+
